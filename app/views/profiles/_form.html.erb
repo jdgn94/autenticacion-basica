@@ -1,0 +1,15 @@
+<%= form_for(@profile) do |f| %>
+	<div class="field">
+		<%= f.text_field :nombre, placeholder: "Nombre" %>
+	</div>
+	<div class="field">
+		<%= f.text_field :apellido, placeholder: "Apellido" %>
+	</div>
+	<% dinero_disponible = 0.00 %>
+	<div class="field">
+		Dinero disponible: <%= dinero_disponible %> 
+	</div>
+	<div class="action">
+		<%= f.submit "Finalizar" %>
+	</div>
+<% end %>
